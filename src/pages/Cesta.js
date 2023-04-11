@@ -52,7 +52,8 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42, //Tamanho da linha
         color: "#464646",
-        fontWeight: "bold"
+        //fontWeight: "bold",
+        fontFamily: "MontserratBold"
     },
 
     fazenda: {
@@ -68,13 +69,15 @@ const estilos = StyleSheet.create({
     nomeFazenda: {
         fontSize: 16,
         lineHeight: 26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily: "MontserratRegular"
     },
 
     descricao: {
         color: "#a3a3a3",
         fontSize: 16,
-        lineHeight: 26
+        lineHeight: 26,
+        fontFamily: "MontserratRegular"
     },
 
     preco: {
