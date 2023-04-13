@@ -3,7 +3,7 @@ import Mock from './src/mocks/Cesta'
 import Index from './src/pages/cesta';
 
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
-
+import AppLoading from 'expo-app-loading';
 
 export default function App() {
 
@@ -13,13 +13,14 @@ export default function App() {
   })
 
   if(!fonteCarregada){
-    return <View/>
+    return <AppLoading />
   }
 
   return (
     <View>  
       <StatusBar/>
-      <Index {...Mock}/> {/*Com o ...mock eu estou passando os objetos do MockCesta para dentro do componente */}
+      {/*Com o ...mock eu estou passando os objetos do MockCesta para dentro do componente */}
+      <Index {...Mock}/> 
     </View>
   );
 }

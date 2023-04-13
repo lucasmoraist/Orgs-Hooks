@@ -1,13 +1,17 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Topo from './Components/Topo';
 import Detalhes from './Components/Detalhes';
 
 export default function Index({topo, detalhes}){
     return <>
-        <Topo {...topo}/> {/*Aqui eu estou passando o */}
-        <Detalhes/>
+        {/*Aqui eu estou passando os valores do topo e detalhes*/}
+        <Topo {...topo}/> 
+        <View style={estilos.cesta}>
+            <Detalhes {...detalhes}/>
+        </View>
+        
     </>
 }
 
