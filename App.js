@@ -1,7 +1,9 @@
 import { StatusBar, View } from 'react-native';
-import Cesta from './src/pages/cesta/Cesta';
+import Mock from './src/mocks/Cesta'
+import Index from './src/pages/cesta';
 
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
+
 
 export default function App() {
 
@@ -17,7 +19,7 @@ export default function App() {
   return (
     <View>  
       <StatusBar/>
-      <Cesta/>
+      <Index {...Mock}/> {/*Com o ...mock eu estou passando os objetos do MockCesta para dentro do componente */}
     </View>
   );
 }

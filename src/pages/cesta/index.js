@@ -4,9 +4,9 @@ import { StyleSheet } from 'react-native';
 import Topo from './Components/Topo';
 import Detalhes from './Components/Detalhes';
 
-export default function Cesta(){
+export default function Index({topo, detalhes}){
     return <>
-        <Topo/>
+        <Topo {...topo}/> {/*Aqui eu estou passando o */}
         <Detalhes/>
     </>
 }
