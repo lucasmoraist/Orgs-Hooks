@@ -1,5 +1,5 @@
 import { StatusBar, View } from 'react-native';
-import Cesta from './src/pages/Cesta';
+import Cesta from './src/pages/cesta/Cesta';
 
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 

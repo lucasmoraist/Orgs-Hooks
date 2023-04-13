@@ -1,18 +1,12 @@
-import React from 'react';
-import { Image, StyleSheet, Dimensions, Text, View } from 'react-native';
+import React from "react";
+import { Image, StyleSheet, View } from 'react-native';
 
-import Texto from '../components/Texto'
+import Texto from '../../../components/Texto'
 
-import topo from '../../assets/topo.png'
-import logo from '../../assets/logo.png'
+import logo from '../../../../assets/logo.png'
 
-const width = Dimensions.get('screen').width;
-
-export default function Cesta(){
-    return <>
-        <Image source={topo} style={estilos.topo} />
-        <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
-
+export default function Detalhes(){
+    return<>
         <View style>
             <Texto style={estilos.nome}>Cesta de Verduras</Texto>
             <View style={estilos.fazenda}>
@@ -30,26 +24,6 @@ export default function Cesta(){
 }
 
 const estilos = StyleSheet.create({
-    topo: {
-      width: "100%",
-      height: 578 / 768 * width
-    },
-    titulo: {
-        width: "100%",
-        position: "absolute",
-        textAlign: "center",
-        fontSize: 16,
-        lineHeight: 26,
-        color: "#fff",
-        fontWeight: "bold",
-        padding: 16
-    },
-
-    cesta: {
-        paddingVertical: 8,
-        paddingHorizontal: 16
-    },
-
     nome: {
         fontSize: 26,
         lineHeight: 42, //Tamanho da linha
@@ -80,7 +54,7 @@ const estilos = StyleSheet.create({
         color: "#a3a3a3",
         fontSize: 16,
         lineHeight: 26,
-        fontFamily: "MontserratRegular"
+        //fontFamily: "MontserratRegular"
     },
 
     preco: {
