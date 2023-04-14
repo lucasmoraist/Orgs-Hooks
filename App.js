@@ -17,7 +17,7 @@ export default function App() {
   }
 
   return (
-    <View>  
+    <View style={{ flex: 1 }}>  
       <StatusBar/>
       {/*Com o ...mock eu estou passando os objetos do MockCesta para dentro do componente */}
       <Index {...Mock}/> 
