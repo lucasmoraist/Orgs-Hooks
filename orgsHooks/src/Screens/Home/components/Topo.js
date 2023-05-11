@@ -46,11 +46,13 @@ const estilos = StyleSheet.create({
         marginTop: 24,
         fontSize: 26,
         lineHeight: 42,
-        fontWeight:"bold"
+        fontWeight:"bold",
+        color: "#464646"
     },
     desc:{
         fontSize: 16,
-        lineHeight: 26
+        lineHeight: 26,
+        color: "#A3A3A3"
     }
 })
 
