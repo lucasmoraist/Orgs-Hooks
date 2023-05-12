@@ -1,9 +1,9 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Estrelas from "./Estrelas";
 
 export default function Produtor({ nome, imagem, distancia, estrelas }){
-    return<View style={estilos.cartao}>
+    return<TouchableOpacity style={estilos.cartao}>
         <Image style={estilos.img} source={imagem} accessibilityLabel={nome}/>
 
         <View style={estilos.info}>
@@ -13,7 +13,7 @@ export default function Produtor({ nome, imagem, distancia, estrelas }){
             </View>
             <Text style={estilos.dist}>{ distancia }</Text>
         </View>
-    </View>
+    </TouchableOpacity>
 }
 
 const estilos = StyleSheet.create({
