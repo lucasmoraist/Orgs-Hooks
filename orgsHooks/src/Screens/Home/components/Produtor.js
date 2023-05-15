@@ -30,7 +30,7 @@ export default function Produtor({ nome, imagem, distancia, estrelas }){
                     grande={selecionado}
                 />
             </View>
-            <Text style={estilos.dist}>{ distancia }</Text>
+            <Text style={estilos.dist}>{ distanciaTexto }</Text>
         </View>
     </TouchableOpacity>
 }
