@@ -1,5 +1,5 @@
 # ORGs
-Projeto criado pelo curso da Alura para ensinar como utilizar React Native
+Projeto criado pelo curso da Alura para aprender como utilizar React Native
 
 ## O que é o ORG
 ORGs é um E-commerce de produtos naturais
