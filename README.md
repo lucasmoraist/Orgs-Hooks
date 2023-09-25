@@ -4,12 +4,32 @@ Projeto criado pelo curso da Alura para aprender como utilizar React Native
 ## O que é o ORG
 ORGs é um E-commerce de produtos naturais
 
-## O que será visto nas aulas
-- Componentes do React Native
-  - Textos, Imagens, Botões
-- Criar componentes e estilzar
-- Listas otimizadas
-- Utilizar Google Fontes
+-----------------------------------------------------------------
+# Dependências
+- Node Modules
+``` 
+npm install
+```
+
+- React Native
+``` 
+npx react-native@latest init AwesomeProject 
+```
+
+- React Navigation
+``` 
+npm install @react-navigation/native
+```
+
+- React Native Safe Area Context
+``` 
+npm install react-native-safe-area-context
+```
+
+- React Native Screens
+``` 
+npm install react-native-screens
+```
 
 -----------------------------------------------------------------
 # Hooks
