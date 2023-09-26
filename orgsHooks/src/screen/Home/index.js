@@ -1,10 +1,11 @@
 import React from 'react';
 import { FlatList, Text, StyleSheet } from 'react-native';
 
-import Produtor from './componentes/Produtor';
-import Topo from './componentes/Topo';
+
 import useProdutores from '../../hooks/useProdutores';
 import useTextos from '../../hooks/useTextos';
+import Topo from './components/Topo';
+import Produtor from './components/Produtor';
 
 export default function Produtores({ melhoresProdutores }) {
   const lista = useProdutores(melhoresProdutores);

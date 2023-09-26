@@ -25,11 +25,6 @@ const estilos = StyleSheet.create({
     backgroundColor: '#EAF5F3',
     padding: 16,
   },
-  compraMensagem: {
-    fontSize: 16,
-    lineHeight: 26,
-    color: '#464646',
-  },
   imagem: {
     width: 70,
     height: 28,
