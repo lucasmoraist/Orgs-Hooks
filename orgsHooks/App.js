@@ -2,8 +2,8 @@ import React from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import useProdutores from './src/hooks/useProdutores';
 
-import Home from './src/telas/Home';
-import Cesta from './src/telas/Cesta';
+import Home from './src/screen/Home';
+import Cesta from './src/screen/Cesta';
 
 export default function App() {
   const produtores = useProdutores(false);
