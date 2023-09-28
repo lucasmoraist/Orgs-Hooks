@@ -6,8 +6,12 @@ import useProdutores from '../../hooks/useProdutores';
 import useTextos from '../../hooks/useTextos';
 import Topo from './components/Topo';
 import Produtor from './components/Produtor';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Produtores({ melhoresProdutores }) {
+
+  const navigation = useNavigation();
+
   const lista = useProdutores(melhoresProdutores);
   const { tituloProdutores } = useTextos();
 
@@ -21,7 +25,9 @@ export default function Produtores({ melhoresProdutores }) {
   return <FlatList
     data={lista}
     renderItem={
-      ({ item }) => <Produtor {...item} aoPressionar={() => {}} />
+      ({ item }) => <Produtor {...item} aoPressionar={() => {
+        navigation.navigate('Produtor');
+      }} />
     }
     keyExtractor={({ nome }) => nome}
     ListHeaderComponent={TopoLista}

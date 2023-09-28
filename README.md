@@ -31,6 +31,16 @@ npm install react-native-safe-area-context
 npm install react-native-screens
 ```
 
+- React Native Bottom Tabs
+```
+npm install @react-navigation/bottom-tabs
+```
+
+- React Native Stack
+```
+npm install @react-navigation/native-stack
+```
+
 -----------------------------------------------------------------
 # Hooks
 
